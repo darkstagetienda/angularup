@@ -5,6 +5,6 @@ export class Stock {
     public price: number,
     public previousPrice: number) {}
     isPositiveChange(): boolean {
-        return this.price >= this.previousPrice;
+        return this.price <= this.previousPrice;
     }
 }
